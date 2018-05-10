@@ -18,7 +18,7 @@ public class CreatureTest {
     public void before(){
         axe = new Weapon(Type.AXE, Type.AXE.getAttackDamage());
         troll = new Troll();
-        player = new Physical();
+        player = new Physical("Andrew");
     }
 
     @Test
