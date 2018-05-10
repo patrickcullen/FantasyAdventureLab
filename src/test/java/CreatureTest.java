@@ -3,6 +3,7 @@ import creatures.Troll;
 import org.junit.Before;
 import org.junit.Test;
 import players.Physical;
+import players.Set;
 import weapons.Type;
 import weapons.Weapon;
 
@@ -18,7 +19,7 @@ public class CreatureTest {
     public void before(){
         axe = new Weapon(Type.AXE, Type.AXE.getAttackDamage());
         troll = new Troll();
-        player = new Physical("Andrew");
+        player = new Physical("Andrew", Set.BARBARIAN, Set.BARBARIAN.getArmour());
     }
 
     @Test

@@ -43,6 +43,10 @@ public abstract class Creature {
         return 0;
     }
 
+    public void takeDamage(int damagePoints){
+        this.healthPoints -= damagePoints;
+    }
+
     public void attack(Player target){
         target.takeDamage(getDamagePoints());
     }

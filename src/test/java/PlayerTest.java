@@ -2,6 +2,7 @@ import org.junit.Before;
 import org.junit.Test;
 import players.Physical;
 import players.Player;
+import players.Set;
 import treasure.Gem;
 import treasure.Treasure;
 
@@ -14,7 +15,7 @@ public class PlayerTest {
 
     @Before
     public void before(){
-        physicalPlayer = new Physical("Andrew");
+        physicalPlayer = new Physical("Andrew", Set.BARBARIAN, Set.BARBARIAN.getArmour());
         gem = new Gem();
     }
 
