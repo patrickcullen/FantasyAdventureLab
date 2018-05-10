@@ -4,7 +4,9 @@ public enum Set {
 
     KNIGHT(25),
     BARBARIAN(10),
-    DWARF(5);
+    DWARF(5),
+    WARLOCK(0),
+    WIZARD(0);
 
     private int armour;
     Set (int armour){
